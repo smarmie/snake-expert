@@ -1,7 +1,7 @@
 import curses
 import threading
 from snake.spatial import Directions
-from snake.play import PlaySnake
+from snake.game import PlaySnake
 
 _TICK = 1000
 _MAZE_SIZE = 20
