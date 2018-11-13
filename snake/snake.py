@@ -17,7 +17,7 @@ class Snake:
 
     @property
     def length(self):
-        return len(self._body)
+        return len(self._body) + 1
 
     @property
     def heading(self):
@@ -52,7 +52,7 @@ class Snake:
                 new_head.y == -1:
             self._alive = False
         else:
-            self._head = new_head
             self._body.insert(0, self._head)
+            self._head = new_head
             if not grow:
                 self._body.pop()

@@ -75,5 +75,3 @@ class PlaySnake:
             self._snake.move(maze_size=self._maze_size, grow=False)
         if not self._snake.alive:
             self.stop()
-        # print("tick{}".format(self._tick_count))
-        # self._tick_count = self._tick_count + 1
